@@ -74,8 +74,8 @@ function draw() {
     })
 
     r.mousePressed(() => {
-        p1 = pr;
-        p2 = pr;
+        p1 = float(pr);
+        p2 = float(pr);
     })
 
     undo1.mousePressed(() => {
