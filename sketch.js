@@ -85,3 +85,7 @@ function draw() {
         p2 = p2p
     })
 }
+
+function ask(str) {
+    return window.prompt(str)
+}
