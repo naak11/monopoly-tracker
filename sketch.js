@@ -21,7 +21,7 @@ let undo2;
 
 function setup() {
     createCanvas(400, 400);
-    let pr = window.prompt('starting number');
+    pr = window.prompt('starting number');
     if(!pr){pr = 0}
     p1 = float(pr);
     p2 = float(pr);
