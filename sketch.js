@@ -48,21 +48,25 @@ function draw() {
     text(p2 + 'm', 300, y);
 
     p1a.mousePressed(() => {
-        p1p = p1;
-        p1 += float(ask('ADD P1'));
-    })
-    p1s.mousePressed(() => {
-        p1p = p1;
-        p1 -= float(ask('SUB P1'));
-    })
-    p2a.mousePressed(() => {
-        p2p = p2;
-        p2 += float(ask('ADD P2'));
-    })
-    p2s.mousePressed(() => {
-        p2p = p2;
-        p2 -= float(ask('SUB P2'));
-    })
+    p1p = p1;
+    p1 = (p1 + parseFloat(ask('ADD P1'))).toFixed(2);
+    p1 = parseFloat(p1); // Convert back to number
+})
+p1s.mousePressed(() => {
+    p1p = p1;
+    p1 = (p1 - parseFloat(ask('SUB P1'))).toFixed(2);
+    p1 = parseFloat(p1); // Convert back to number
+})
+p2a.mousePressed(() => {
+    p2p = p2;
+    p2 = (p2 + parseFloat(ask('ADD P2'))).toFixed(2);
+    p2 = parseFloat(p2); // Convert back to number
+})
+p2s.mousePressed(() => {
+    p2p = p2;
+    p2 = (p2 - parseFloat(ask('SUB P2'))).toFixed(2);
+    p2 = parseFloat(p2); // Convert back to number
+})
 
     go1.mousePressed(() => {
         p1p = p1;
